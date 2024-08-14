@@ -1,0 +1,22 @@
+<div class="filmmakers-container">
+  <h1>Film Makers</h1>
+
+  <div *ngIf="directo.length > 0" class="appointment-section">
+    <ul>
+      <li *ngFor="let filmmaker of directo">
+        <div class="filmmaker-info">
+          <span>{{ filmmaker.Director }}</span>
+          <div class="buttons-container">
+            <button class="btn btn-success" [routerLink]="'/dashboard/dirprofile/' + filmmaker.id">
+              View Profile
+            </button>
+            <button class="btn btn-primary upload-button">
+              Upload Files
+            </button>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>
+<router-outlet></router-outlet>

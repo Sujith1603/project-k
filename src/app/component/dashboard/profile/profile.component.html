@@ -1,0 +1,17 @@
+<section class="container">
+<div class="profile-header">
+    <img [src]="user.avatar" alt="Profile Picture">
+    <h2>{{ user.name }}</h2>
+    <p>{{ user.bio }}</p>
+</div>
+
+<div class="profile-menu">
+    <ul>
+        <li><a routerLink="/profile/about">About Me</a></li>
+        <li><a routerLink="/profile/posts">Posts</a></li>
+        <li><a routerLink="/profile/photos">Photos</a></li>
+        <li><a routerLink="/profile/settings">Settings</a></li>
+    </ul>
+</div>
+<div class="profile-content"></div>
+</section>

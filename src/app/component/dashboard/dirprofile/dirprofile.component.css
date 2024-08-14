@@ -1,0 +1,23 @@
+.row{
+    display: flex;
+    align-items: center;
+  }
+.imag{
+    margin-left: 153px;
+    max-width: 10px;
+    flex: 1;
+    
+}
+.container{
+    font-size: x-large;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    margin-top: 100px;
+    max-width: 550px;
+    background:transparent;
+    color: #141212;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-left: 353px;
+    flex: 2;
+
+}

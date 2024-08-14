@@ -1,0 +1,24 @@
+<div class="filmmakers-container">
+    <h1>Cameramen</h1>
+
+    <div *ngIf="dops.length > 0" class="appointment-section">
+      <ul>
+        <li *ngFor="let do of dops">
+          <div class="filmmaker-info">
+            <span>{{ do.Cameraman }}</span>
+            <div class="buttons-container">
+              <button class="btn btn-success" [routerLink]="'/dashboard/dirprofile1/' + do.id">
+                View Profile
+              </button>
+              <button
+                routerLink="/file-upload"
+                class="btn btn-primary upload-button"
+              >
+                Upload Files
+              </button>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
